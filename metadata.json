@@ -1,0 +1,6 @@
+{
+  "name": "Mô Phỏng Lắp Ráp Hệ Thống Thủy Lực",
+  "description": "Website giáo cụ trực quan mô phỏng lắp ráp hệ thống thủy lực 4 chân kích có khóa tải (kéo - thả, mô phỏng dòng dầu, chú thích từng bước chuẩn ISO 1219).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

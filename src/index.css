@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  h1, h2, h3, .font-tech {
+    font-family: 'Chakra Petch', 'IBM Plex Sans', sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@keyframes flowPulseRed {
+  0% {
+    stroke-dashoffset: 48;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flowPulseBlue {
+  0% {
+    stroke-dashoffset: 48;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flowDashKeyframes {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes reverseFlowDashKeyframes {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 24;
+  }
+}
+
+@keyframes electricFlash {
+  0%, 100% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 2px #facc15);
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px #fde047);
+  }
+}
+
+.flow-dash-animation {
+  animation: flowDashKeyframes 1s linear infinite;
+}
+
+.reverse-flow-dash-animation {
+  animation: reverseFlowDashKeyframes 1s linear infinite;
+}
+
+.electric-glow {
+  animation: electricFlash 0.8s ease-in-out infinite;
+}
+
+.pipe-flow-red {
+  animation: flowPulseRed 1.2s linear infinite;
+}
+
+.pipe-flow-blue {
+  animation: flowPulseBlue 1.4s linear infinite;
+}
+
+.pipe-flow-reverse-blue {
+  animation: flowPulseBlue 1.4s linear infinite reverse;
+}
+
+.pipe-flow-reverse-red {
+  animation: flowPulseRed 1.2s linear infinite reverse;
+}
+
+@keyframes fastFlowRed {
+  0% {
+    stroke-dashoffset: 60;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fastFlowBlue {
+  0% {
+    stroke-dashoffset: 60;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.oil-stream-red {
+  animation: fastFlowRed 0.8s linear infinite;
+}
+
+.oil-stream-blue {
+  animation: fastFlowBlue 0.9s linear infinite;
+}
+
+.oil-stream-reverse-blue {
+  animation: fastFlowBlue 0.9s linear infinite reverse;
+}
+
+@keyframes fluidWave {
+  0%, 100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  50% {
+    transform: translateY(-2px) scaleY(1.03);
+  }
+}
+
+.fluid-wave {
+  animation: fluidWave 2s ease-in-out infinite;
+}
+
+/* Custom scrollbar for component palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.6);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.9);
+}
